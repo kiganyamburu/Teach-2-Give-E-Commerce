@@ -1,11 +1,10 @@
 {
   "name": "teach-2-give-e-commerce-",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json:server": "json-server db.json --port 3000"
+    "json:server": "json-server --watch db.json --port 3000"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +15,6 @@
   },
   "devDependencies": {
     "typescript": "^5.4.5"
-  }
+  },
+  "description": ""
 }
