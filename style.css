@@ -1,83 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
 #app {
-  width: 50%;
-  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 
-h1,
-h2 {
+/* Heading Styles */
+h1 {
   text-align: center;
+  color: #333;
 }
 
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
 #product-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-#product-form form {
-  display: flex;
-  flex-direction: column;
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
 }
 
-#product-form form label {
-  margin-top: 10px;
-}
-
-#product-form form input,
-#product-form form textarea {
+form input,
+form textarea,
+form button {
+  width: 100%;
   padding: 10px;
-  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-#product-form form button {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #ff0059;
+form button {
+  background-color: #28a745;
   color: white;
   border: none;
   cursor: pointer;
 }
 
-#product-form form button:hover {
-  background-color: #0056b3;
+form button:hover {
+  background-color: #218838;
 }
 
-#product-list ul {
+/* Product List Styles */
+#product-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#products {
   list-style-type: none;
   padding: 0;
 }
 
-#product-list li {
-  padding: 10px;
+#products li {
   background: #fff;
-  border: 1px solid #ddd;
-  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#product-list li button {
+#products li:last-child {
+  border-bottom: none;
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Button Styles */
+.product-card button {
+  padding: 5px 10px;
   background-color: #dc3545;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-#product-list li button:hover {
+.product-card button:hover {
   background-color: #c82333;
 }
